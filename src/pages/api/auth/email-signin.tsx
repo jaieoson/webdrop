@@ -1,5 +1,6 @@
 import type { GetServerSidePropsContext, InferGetServerSidePropsType } from "next";
 import { getCsrfToken } from "next-auth/react"
+import React from "react";
 
 export default function SignIn({ csrfToken }: InferGetServerSidePropsType<typeof getServerSideProps>) {
   return (
